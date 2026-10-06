@@ -1,0 +1,8 @@
+{
+  "name": "investor-search",
+  "version": "1.0.0",
+  "description": "Build a sourced list of the investors in a market - family offices, VCs, PE firms and angels - and say honestly how complete it is.",
+  "author": {
+    "name": "BCP partners GmbH"
+  }
+}
