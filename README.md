@@ -1,4 +1,4 @@
-# Investor Search
+# Investor Search for Gemini CLI
 
 Build a sourced list of the investors in a market — family offices, VCs, PE firms and
 angels — and say honestly how complete it is.
@@ -12,8 +12,6 @@ By **BCP partners GmbH** · [bcpp.io](https://www.bcpp.io)
 ```
 gemini extensions install https://github.com/verun-ai/investor-search-for-gemini
 ```
-
-**Cursor** — Customize → Plugins → From GitHub Repository, then paste this repository's URL.
 
 **Antigravity, Claude Code, GitHub Copilot** — copy the skill folder:
 
@@ -47,11 +45,15 @@ Research only — not investment advice.
 | Path | Read by |
 |---|---|
 | `gemini-extension.json` | Gemini CLI |
-| `.cursor-plugin/plugin.json` | Cursor |
-| `skills/investor-search/` | Gemini CLI, Cursor |
-| `.agents/skills/investor-search/` | Antigravity, Claude Code, GitHub Copilot, Cursor |
+| `skills/investor-search/` | Gemini CLI |
+| `.agents/skills/investor-search/` | Antigravity, Claude Code, GitHub Copilot, and any agent that reads `.agents/skills` |
 
 The two skill folders are kept byte-for-byte identical. Any change goes into both.
+
+## Other agents
+
+The same skill is packaged separately for each agent it runs in. Cursor:
+[investor-search-for-cursor](https://github.com/verun-ai/investor-search-for-cursor).
 
 ## Licence
 
